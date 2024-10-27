@@ -1,0 +1,13 @@
+version: '3.9'
+
+services:
+  competition:
+    build:
+      context: ./..
+      dockerfile: docker/dockerfiles/competition/Dockerfile
+    env_file: .env
+    networks:
+      internal:
+
+networks:
+  internal:
